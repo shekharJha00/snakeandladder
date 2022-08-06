@@ -15,7 +15,7 @@ public class SnakeandLadder {
             action(dieNumber);
             System.out.println("Current Position : " + POSITION);
         }
-        System.out.println("Number of times die rolled : - "+TOTAL_DIE_ROLL);
+        System.out.println("Number of times die rolled :: "+TOTAL_DIE_ROLL);
 
     }
         private static void action(int dieNumber) {
