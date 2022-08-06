@@ -9,7 +9,15 @@ public class SnakeandLadder {
     public static void main(String[] args) {
         System.out.println("Welcome to Snake And ladder");
         System.out.println("Current Position : " + POSITION);
+        while (POSITION!=100) {
+            int dieNumber = dieRoll();
+            System.out.println("Die Number is : " +dieNumber);
+            action(dieNumber);
+            System.out.println("Current Position : " + POSITION);
+        }
+        System.out.println("Number of times die rolled : "+TOTAL_DIE_ROLL);
 
+    }
         private static void action(int dieNumber) {
             int option = (int) (Math.random() * 10) % 3;
             switch (option){
@@ -35,5 +43,5 @@ public class SnakeandLadder {
             TOTAL_DIE_ROLL++;
             return dieNumber;
         }
-    }}
+    }
 
